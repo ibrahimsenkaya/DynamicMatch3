@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Add : MonoBehaviour
+public class AddGrid: MonoBehaviour
 {
     private int Coloum;
     [SerializeField] private GameObject GridParent;

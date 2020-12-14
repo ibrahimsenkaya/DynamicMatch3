@@ -8,27 +8,7 @@ public class GridManager : GridLayoutGroup
     private float width;
     public int ColumnCount = 10;
     public int RowCount = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //
-        // // width = this.gameObject.GetComponent<RectTransform>().rect.width;
-        // //      Debug.Log(width);
-        // // Vector2 newSize = new Vector2(width / 2, width / 2);
-        // // this.gameObject.GetComponent<GridLayoutGroup>().cellSize = newSize;
-        // float width;
-        // GridLayoutGroup lg;
-        // lg = GetComponent<GridLayoutGroup>();
-        // width = gameObject.GetComponent<RectTransform>().rect.width;
-        // float sizeButt = lg.cellSize.x + lg.spacing.x;
-        // int hSize = Mathf.FloorToInt(width / sizeButt);
-        // lg.constraintCount = hSize;
-        SetLayoutHorizontal();
-    }
-    
-  
- 
- 
+   
     public override void SetLayoutHorizontal()
     {
         UpdateCellSize();

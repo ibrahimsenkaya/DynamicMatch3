@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8fe02e9-3f12-4134-a78c-b80df30f8be5" name="Default Changelist" comment="" />
+    <list default="true" id="e8fe02e9-3f12-4134-a78c-b80df30f8be5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grid/GridManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grid/GridManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +36,7 @@
         <option value="$PROJECT_DIR$/Assets/Button/CheckNeighbors.cs" />
         <option value="$PROJECT_DIR$/Assets/GridController.cs" />
         <option value="$PROJECT_DIR$/Assets/Add.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grid/GridManager.cs" />
       </list>
     </option>
   </component>
@@ -77,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607962632759</updated>
-      <workItem from="1607962637308" duration="9959000" />
+      <workItem from="1607962637308" duration="10580000" />
     </task>
     <servers />
   </component>

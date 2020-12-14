@@ -24,8 +24,6 @@ public class GridController : MonoBehaviour
             currentButtons.Add(Buttons[aIndex]);
            
         }
-        int asd = currentButtons.Count;
-
         #region GridEdges
 
         if (aIndex == 0)
@@ -127,7 +125,6 @@ public class GridController : MonoBehaviour
         if (!currentButtons.Contains(Buttons[aIndex]))
         {
             currentButtons.Add(Buttons[aIndex]);
-           
         }
       
 

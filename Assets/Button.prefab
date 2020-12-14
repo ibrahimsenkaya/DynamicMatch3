@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 2142272558962841289}
   - component: {fileID: 2142272558962841288}
   - component: {fileID: 2142272558962841287}
+  - component: {fileID: 947314305522427665}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -198,4 +199,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142272558962841288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 947314305522427665}
+        m_TargetAssemblyTypeName: CheckNeighbors, Assembly-CSharp
+        m_MethodName: Checkthem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &947314305522427665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142272558962841285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e70809562b9914e8d232e7c62c9622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CheckedImage: {fileID: 21300000, guid: 0d5c2d9ab58e76d4389dc7ea15ddb70a, type: 3}
+  NormalImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}

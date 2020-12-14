@@ -34,12 +34,14 @@ public class Add : MonoBehaviour
         }
 
         var gridController = GridParent.GetComponent<GridController>();
+      
         gridController.Buttons.Clear();
         for (int i = 0; i < Coloum * Coloum; i++)
         {
             GameObject tempBtn = Instantiate(_buttonPrefab, GridParent.transform);
-             tempBtn.transform.name = "Btn" + i.ToString();
+             tempBtn.transform.name =i.ToString();
             gridController.Buttons.Add(tempBtn);
         }
+        gridController.ChangeColomCount(Coloum);
     }
 }

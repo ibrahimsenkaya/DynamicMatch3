@@ -6,9 +6,15 @@ using UnityEngine;
 public class GridController : MonoBehaviour
 {
     public List<GameObject> Buttons;
+    [SerializeField] int coloumCount;
 
-    private void Update()
+    public void ChangeColomCount(int aIndex)
     {
-        Debug.Log(GetComponent<GridManager>().ColumnCount);
+        coloumCount = aIndex;
+    }
+
+    public void checkNeighbors(int c)
+    {
+        
     }
 }

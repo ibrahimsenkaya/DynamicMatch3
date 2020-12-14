@@ -15,16 +15,19 @@ public class Add : MonoBehaviour
     public void CreateGrid()
     {
         Destroy(GridParent.GetComponent<GridManager>());
+        GridParent.GetComponent<GridController>() .Reset();
         Coloum = int.Parse(_inputField.text);
-        StartCoroutine(AddAgain());
+        StartCoroutine(WaitAndAddGrid());
+        
+        
     }
 
-    IEnumerator AddAgain()
+    IEnumerator WaitAndAddGrid()
     {
         yield return new WaitForSeconds(.1f);
-        GridManager on = GridParent.AddComponent<GridManager>();
-        on.ColumnCount = Coloum;
-        on.RowCount = Coloum;
+        GridManager tempgridManager = GridParent.AddComponent<GridManager>();
+        tempgridManager.ColumnCount = Coloum;
+        tempgridManager.RowCount = Coloum;
         if (GridParent.transform.childCount != 0)
         {
             for (int i = 0; i < GridParent.transform.childCount; i++)

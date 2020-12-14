@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GridController : MonoBehaviour
 {
     public List<GameObject> Buttons;
     [SerializeField] private List<GameObject> currentButtons, checkedButtons;
     [SerializeField] int coloumCount;
+    [SerializeField] private TextMeshProUGUI matchCountText;
+    public int _matchCount;
 
     public void ChangeColomCount(int aIndex)
     {
@@ -112,6 +115,8 @@ public class GridController : MonoBehaviour
                 item.GetComponent<CheckNeighbors>().Reset();
             }
             currentButtons.Clear();
+            _matchCount++;
+            matchCountText.text = "Match Count: " + _matchCount.ToString();
         }
        
         
@@ -272,13 +277,9 @@ public class GridController : MonoBehaviour
 
     #endregion
 
-    void AddYourselfToCurrentButtons(int aIndex)
+    public void Reset()
     {
-        currentButtons.Add(Buttons[aIndex]);
-    }
-
-    void AddOnCheckedList(int aIndex)
-    {
-        checkedButtons.Add(Buttons[aIndex]);
+        _matchCount = 0; 
+        matchCountText.text = "Match Count: " + _matchCount.ToString();
     }
 }

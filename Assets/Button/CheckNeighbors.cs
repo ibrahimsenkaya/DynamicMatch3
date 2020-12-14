@@ -9,9 +9,11 @@ public class CheckNeighbors : MonoBehaviour
    private int SelfIndex;
    private GridController _gridController;
    [SerializeField] Sprite CheckedImage,NormalImage;
+   private Image _image;
 
    private void OnEnable()
    {
+      _image = GetComponent<Image>();
       _gridController = GetComponentInParent<GridController>();
    }
 
@@ -19,8 +21,15 @@ public class CheckNeighbors : MonoBehaviour
    {
       SelfIndex = int.Parse(transform.name);
       SetYourselfChecked();
-      _gridController.checkNeighbors(SelfIndex);
+      _gridController.checkLeadNeighbors(SelfIndex);
 
+   }
+
+   public void Reset()
+   {
+      _image.sprite= NormalImage;
+      transform.tag = "Untagged";
+      
    }
 
 
